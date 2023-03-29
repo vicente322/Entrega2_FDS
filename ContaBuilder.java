@@ -1,5 +1,4 @@
 public class ContaBuilder {
-    public enum Categoria {NORMAL,ADVANCED,PREMIUM};
 
     private int saldoLivre;
     private int saldoInvestimento;
@@ -48,7 +47,27 @@ public class ContaBuilder {
             return this;
         }
 
+        public ContaBuilder build(){
+            return new ContaBuilder(this);
+        }
 
+
+    }
+
+    private ContaBuilder(Builder builder){
+        this.saldoLivre = builder.saldoLivre;
+        this.saldoInvestimento = builder.saldoInvestimento;
+        this.numConta = builder.numConta;
+        this.nomeCorrentista = builder.nomeCorrentista;
+        this.taxaRemuneracao = builder.taxaRemuneracao;
+        this.taxaSaldoNegativo = builder.taxaSaldoNegativo;
+        this.categoriaInicial = builder.categoriaInicial;
+    }
+
+    public String toString(){
+        return "numConta: " + numConta + "\nnomeCorrentista: " + nomeCorrentista + "\nsaldoLivre: " + saldoLivre + 
+                "\nsaldoInvestimento: " + saldoInvestimento + "\ntaxaRemuneracao: " + taxaRemuneracao + 
+                "\ntaxaSaldoNegativo: " + taxaSaldoNegativo + "\ncategoria: " + categoriaInicial; 
     }
 
 }

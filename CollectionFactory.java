@@ -13,7 +13,7 @@ import java.util.TreeSet;
 public class CollectionFactory<E> {
       private static CollectionFactory collec = new CollectionFactory();
 
-      public static CollectionFactory InsatanceOf(){
+      public static CollectionFactory GetInsatance(){
             return collec;
       }
 
