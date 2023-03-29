@@ -1,1 +1,7 @@
 # Entrega2_FDS
+
+Resolução dos exercícios de texto:
+
+1) Os padrões utilizados na resolução desse exercício foram o Factory e o Singleton. O padrão Singleton foi utilizado para que todos os objetos criados possuíssem apenas uma instância utilizando um construtor privado. Já o Factory foi usado em um método que reconhece qual tipo de instância criar para cada situação que for dada pelo usuário. O padrão Factory permite a uma classe deferir a instanciação para subclasses, mantendo as suas dependências flexíveis.
+
+4) Sim, concordamos com os padrões propostos, pois eles funcionam bem na implementação. Porém na primeira questão, no lugar do Factory, achamos que também poderia ser utilizado o Static Factory porque eles possuem um funcionamento similar. O padrão Factory funciona bem na primeira questão pois ele permite que apenas uma classe gerencie as instâncias dos objetos que serão criados de acordo com os critérios do usuário e permite que essa dependência seja flexível. O padrão Builder é bem utilizado na questão 2 porque é um problema que pede um objeto bem customizado, logo o Builder permite à classe possuir menos construtores para que ela fique mais organizada e funcional. Já na última é utilizado o Static Factory, que admite objetos que tenham algumas características pré-selecionadas com customização parcial de elementos.
