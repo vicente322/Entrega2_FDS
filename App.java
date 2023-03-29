@@ -22,6 +22,11 @@ public class App {
                                                   .categoriaIncial(Categoria.ADVANCED)
                                                   .build();
 
+            Personagem boneco = Personagem.Normal();
+            Personagem bonecoPontente = Personagem.Poderoso(70);
+            Personagem bonecoInvisivel = Personagem.Soturno(1);
+            Personagem bonecoForte = Personagem.Completo(1, 100, 5);
+
 
             System.out.println("Exercicio 1:");
             if (a instanceof ArrayList){
@@ -41,6 +46,12 @@ public class App {
             System.out.println(conta1.toString() + "\n") ;
             System.out.println(conta2.toString());
 
+
+            System.out.println("\n\nExercicio 3:");
+            System.out.println(boneco.toString());
+            System.out.println(bonecoPontente.toString());
+            System.out.println(bonecoInvisivel.toString());
+            System.out.println(bonecoForte.toString());
 
       }
 }
